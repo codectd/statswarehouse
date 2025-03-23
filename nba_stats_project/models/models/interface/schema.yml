@@ -1,0 +1,103 @@
+version: 2
+
+models:
+  - name: nba_player_stats
+    description: "Player statistics for each season."
+    columns:
+      - name: player_id
+        description: "Unique identifier for the player."
+        tests:
+          - not_null
+          - unique
+      - name: player_name
+        description: "Name of the player."
+        tests:
+          - not_null
+      - name: team_abbr
+        description: "Abbreviation for the team the player is associated with."
+        tests:
+          - not_null
+      - name: season
+        description: "Season of the player stats."
+        tests:
+          - not_null
+      - name: age
+        description: "Age of the player."
+      - name: pos
+        description: "Position of the player (e.g., Guard, Forward, Center)."
+      - name: g
+        description: "Games played by the player."
+      - name: gs
+        description: "Games started by the player."
+      - name: mp
+        description: "Minutes played per game."
+      - name: fg
+        description: "Field goals made by the player."
+      - name: fga
+        description: "Field goals attempted by the player."
+      - name: fg_pct
+        description: "Field goal percentage of the player."
+      - name: 3p
+        description: "3-point field goals made by the player."
+      - name: 3pa
+        description: "3-point field goals attempted by the player."
+      - name: 3p_pct
+        description: "3-point field goal percentage of the player."
+      - name: 2p
+        description: "2-point field goals made by the player."
+      - name: 2pa
+        description: "2-point field goals attempted by the player."
+      - name: 2p_pct
+        description: "2-point field goal percentage of the player."
+      - name: efg_pct
+        description: "Effective field goal percentage of the player."
+      - name: ft
+        description: "Free throws made by the player."
+      - name: fta
+        description: "Free throws attempted by the player."
+      - name: ft_pct
+        description: "Free throw percentage of the player."
+      - name: orb
+        description: "Offensive rebounds by the player."
+      - name: drb
+        description: "Defensive rebounds by the player."
+      - name: trb
+        description: "Total rebounds by the player."
+      - name: ast
+        description: "Assists by the player."
+      - name: stl
+        description: "Steals by the player."
+      - name: blk
+        description: "Blocks by the player."
+      - name: tov
+        description: "Turnovers by the player."
+      - name: pf
+        description: "Personal fouls by the player."
+      - name: pts
+        description: "Points scored by the player."
+      - name: awards
+        description: "Awards received by the player (e.g., MVP, All-Star)."
+
+  - name: nba_team_data
+    description: "Team data including wins, losses, and team performance per season."
+    columns:
+      - name: team_id
+        description: "Unique identifier for the team."
+        tests:
+          - not_null
+          - unique
+      - name: team_name
+        description: "Full name of the team."
+        tests:
+          - not_null
+      - name: team_abbr
+        description: "Abbreviation for the team."
+        tests:
+          - not_null
+      - name: wins
+        description: "Number of games won by the team in the season."
+        tests:
+          - not_null
+      - name: losses
+        description: "Number of games lost by the team in the season."
+

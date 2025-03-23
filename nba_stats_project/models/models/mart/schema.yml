@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: player_season_averages
+    description: "Aggregated season averages for players"
+    columns:
+      - name: avg_points_per_game
+        tests:
+          - not_null
+          - unique
+      - name: avg_assists_per_game
+        tests:
+          - not_null
+      - name: avg_rebounds_per_game
+        tests:
+          - not_null

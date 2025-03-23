@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: postgres
+    database: postgres
+    schema: public
+    tables:
+      - name: nba_player_stats
+      - name: nba_team_data

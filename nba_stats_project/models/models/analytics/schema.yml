@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: top_10_players_by_points
+    description: "Top 10 players based on career average points per game."
+    columns:
+      - name: player_name
+        description: "Name of the player."
+        tests:
+          - not_null
+      - name: career_avg_points_per_game
+        description: "Career average points per game for the player."
+        tests:
+          - not_null

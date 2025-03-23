@@ -1,0 +1,34 @@
+[0m18:12:12.515536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10595da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067dfc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067dfed0>]}
+
+
+============================== 18:12:12.518680 | 1895d6da-c62b-4676-9955-5db2f065728e ==============================
+[0m18:12:12.518680 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:12:12.518972 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/williamthompson/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init nba_stats_project', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:12:12.526649 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/Users/williamthompson/.dbt')}
+[0m18:12:12.526851 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m18:12:12.527553 [debug] [MainThread]: Starter project path: /Users/williamthompson/Documents/GitHub/statswarehouse/myenv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m18:12:12.530869 [info ] [MainThread]: 
+Your new dbt project "nba_stats_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:12:12.531097 [info ] [MainThread]: Setting up your profile.
+[0m18:13:27.181593 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m18:13:27.184922 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m18:14:57.737640 [info ] [MainThread]: Profile nba_stats_project written to /Users/williamthompson/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:14:57.757341 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 165.28564, "process_in_blocks": "0", "process_kernel_time": 0.205332, "process_mem_max_rss": "91979776", "process_out_blocks": "0", "process_user_time": 0.609807}
+[0m18:14:57.757831 [debug] [MainThread]: Command `dbt init` succeeded at 18:14:57.757722 after 165.29 seconds
+[0m18:14:57.758714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f64b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106672e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dbf680>]}
+[0m18:14:57.759171 [debug] [MainThread]: Flushing usage events
+[0m18:14:58.067741 [debug] [MainThread]: An error was encountered while trying to flush usage events
